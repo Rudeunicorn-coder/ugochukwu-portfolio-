@@ -1,0 +1,432 @@
+/*
+ * Custom components: theme toggle button + testimonials.
+ */
+
+/* ---- Theme toggle (mobile-first, 48px touch target) ---- */
+.theme-toggle {
+  width: 44px;
+  height: 44px;
+  min-height: 44px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .theme-toggle:focus {
+    outline: 2px solid #2ed9a0;
+    outline-offset: 2px; }
+  .theme-toggle:hover {
+    background: #2ed9a0;
+    color: #000000;
+    border-color: #2ed9a0; }
+
+.theme-toggle-nav {
+  position: absolute;
+  top: 12px;
+  right: 78px;
+  z-index: 20; }
+  @media (max-width: 575.98px) {
+    .theme-toggle-nav {
+      right: 74px;
+      top: 10px; } }
+  @media (min-width: 992px) {
+    .theme-toggle-nav {
+      right: 22px;
+      top: 14px; } }
+  @media (min-width: 1200px) {
+    .theme-toggle-nav {
+      right: 100px; } }
+
+[data-theme="light"] .ftco-navbar-light.scrolled .theme-toggle,
+[data-theme="light"] .navbar .theme-toggle {
+  background: rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  color: #000000; }
+  [data-theme="light"] .ftco-navbar-light.scrolled .theme-toggle:hover,
+  [data-theme="light"] .navbar .theme-toggle:hover {
+    background: #2ed9a0;
+    color: #000000; }
+
+/* ---- Testimonials (dark default) ---- */
+.testimonial-box {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .testimonial-box .testimonial-stars {
+    color: #2ed9a0;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-bottom: 12px; }
+  .testimonial-box p.testimonial-text {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
+  .testimonial-box .testimonial-author {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 14px; }
+    .testimonial-box .testimonial-author .testimonial-avatar {
+      width: 52px;
+      height: 52px;
+      min-width: 52px;
+      border-radius: 50%;
+      background: #2ed9a0;
+      color: #000000;
+      font-weight: 700;
+      font-size: 18px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .testimonial-box .testimonial-author h4 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 1.3; }
+    .testimonial-box .testimonial-author span {
+      display: block;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.6); }
+
+[data-theme="light"] .testimonial-box {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  -webkit-box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.12); }
+  [data-theme="light"] .testimonial-box p.testimonial-text {
+    color: #444444; }
+  [data-theme="light"] .testimonial-box .testimonial-author h4 {
+    color: #000000; }
+  [data-theme="light"] .testimonial-box .testimonial-author span {
+    color: #777777; }
+[data-theme="light"] .testimonial-box .testimonial-avatar {
+  color: #ffffff; }
+
+/* ============================================================
+   Identity layer — handcrafted look that departs from the
+   stock template (fonts, accent, skill bars, buttons, details).
+   ============================================================ */
+
+:root {
+  --accent: #2ed9a0;
+  --accent-deep: #1c9e75;
+  --accent-ink: #052018;
+  --accent-soft: rgba(46, 217, 160, 0.14);
+  --rad-lg: 16px;
+  --rad-sm: 10px;
+}
+
+[data-theme="light"] {
+  --accent-soft: rgba(46, 217, 160, 0.14);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0f0e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(46, 217, 160, 0.35);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Headings + brand use a geometric, characterful display face */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5,
+.heading-section h2,
+.navbar-brand,
+.hero-wrap h1.bread,
+.about-author .desc h3 {
+  font-family: "Space Grotesk", "Manrope", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.navbar-brand {
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.heading-section h2 {
+  font-weight: 700;
+}
+
+/* Oversized background words: tinted instead of glaring white */
+[data-theme="dark"] .heading-section h1.big {
+  color: rgba(46, 217, 160, 0.07);
+}
+
+[data-theme="dark"] .heading-section h1.big-2 {
+  color: rgba(46, 217, 160, 0.07);
+}
+
+/* Buttons — readable contrast in both themes */
+.btn {
+  border-radius: 10px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.btn-primary {
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  color: var(--accent-ink);
+  font-weight: 600;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.show > .btn-primary.dropdown-toggle {
+  background: var(--accent-deep);
+  border-color: var(--accent-deep);
+  color: #ffffff;
+  -webkit-box-shadow: 0 10px 25px -8px rgba(46, 217, 160, 0.55);
+  box-shadow: 0 10px 25px -8px rgba(46, 217, 160, 0.55);
+  -webkit-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.btn-white {
+  border-radius: 10px;
+}
+
+/* Focus visible — keyboard friendly, on-brand */
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Skill bars — the stock template ships these without colors */
+.progress-wrap h3 {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-bottom: 12px;
+}
+
+.progress-wrap .progress {
+  height: 10px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+[data-theme="dark"] .progress-wrap .progress {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.progress-bar.color-1 { background: #2ed9a0; }
+.progress-bar.color-2 { background: #24c1d4; }
+.progress-bar.color-3 { background: #f5b32f; }
+.progress-bar.color-4 { background: #ff7d6b; }
+.progress-bar.color-5 { background: #9c7bff; }
+.progress-bar.color-6 { background: #38bdf8; }
+.progress-bar.color-7 { background: #2ed9a0; }
+
+/* Soft cards */
+.resume-wrap,
+.services-1,
+.testimonial-box {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.resume-wrap {
+  border-left: 3px solid var(--accent);
+}
+
+.services-1 {
+  border-radius: var(--rad-lg);
+}
+
+.services-1 .icon {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* Service detail text readable in dark mode */
+[data-theme="dark"] .service-detail {
+  color: #bbbbbb;
+}
+
+/* Mobile-first: keep big words from overflowing on phones */
+@media (max-width: 575.98px) {
+  .heading-section h1.big,
+  .heading-section h1.big-2 {
+    font-size: 120px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ============================================================
+   Services cards — WebStackPro lineup (glass cards + lists)
+   ============================================================ */
+
+.services-1 .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.service-icon {
+  width: 44px;
+  height: 44px;
+  display: block;
+}
+
+.services-1 .service-detail {
+  text-align: left;
+}
+
+[data-theme="dark"] .service-detail {
+  color: #c9c9c9;
+}
+
+.service-list {
+  list-style: none;
+  margin: 14px 0 14px 0;
+  padding: 0;
+}
+
+.service-list li {
+  position: relative;
+  padding: 5px 0 5px 20px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.service-list li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 13px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+[data-theme="light"] .service-list li {
+  color: #555555;
+}
+
+.service-list .price {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+[data-theme="light"] .service-list .price {
+  color: var(--accent-deep);
+}
+
+.service-cta {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  border-bottom: 1px solid rgba(46, 217, 160, 0.5);
+}
+
+.service-cta:hover,
+.service-cta:focus {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+[data-theme="light"] .service-cta:hover,
+[data-theme="light"] .service-cta:focus {
+  color: var(--accent-deep);
+  border-color: var(--accent-deep);
+}
+
+.services-all-link {
+  color: var(--accent);
+  font-weight: 600;
+  border-bottom: 1px solid rgba(46, 217, 160, 0.5);
+}
+
+.services-all-link:hover {
+  color: #ffffff;
+}
+
+[data-theme="light"] .services-all-link {
+  color: var(--accent-deep);
+}

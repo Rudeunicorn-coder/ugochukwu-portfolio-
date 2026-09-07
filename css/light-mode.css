@@ -1,0 +1,96 @@
+/*
+ * Light mode overrides.
+ * Default theme is dark (template default).
+ * Activate by adding data-theme="light" on <html>.
+ */
+[data-theme="light"] body {
+  background: #ffffff;
+  color: #555555; }
+
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5 {
+  color: #000000; }
+
+[data-theme="light"] .heading-section h1.big {
+  color: rgba(0, 0, 0, 0.08); }
+
+[data-theme="light"] .heading-section .subheading {
+  color: #000000; }
+
+[data-theme="light"] .ftco-about .counter-wrap .text p span,
+[data-theme="light"] .ftco-about ul.about-info li span:first-child {
+  color: #000000; }
+
+[data-theme="light"] .ftco-navbar-light {
+  background: transparent !important; }
+
+[data-theme="light"] .ftco-navbar-light.scrolled {
+  background: #ffffff !important;
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08); }
+  [data-theme="light"] .ftco-navbar-light.scrolled .navbar-brand,
+  [data-theme="light"] .ftco-navbar-light.scrolled .ftco_navbar .nav-link,
+  [data-theme="light"] .ftco-navbar-light.scrolled .navbar-nav > .nav-item > .nav-link,
+  [data-theme="light"] .ftco-navbar-light.scrolled .nav-link {
+    color: #000000 !important; }
+
+@media (max-width: 991.98px) {
+  [data-theme="light"] .ftco-navbar-light {
+    background: #ffffff !important; }
+  [data-theme="light"] .ftco-navbar-light .navbar-brand,
+  [data-theme="light"] .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    color: #000000 !important; }
+  [data-theme="light"] .navbar-toggler {
+    color: #000000 !important; } }
+
+[data-theme="light"] .progress {
+  background: #eeeeee; }
+
+[data-theme="light"] .progress-bar span {
+  color: #000000; }
+
+[data-theme="light"] .services-1 {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17); }
+  [data-theme="light"] .services-1 .desc h3,
+  [data-theme="light"] .services-1 .desc h3 a,
+  [data-theme="light"] .services-1 .desc h4 {
+    color: #000000; }
+  [data-theme="light"] .services-1:hover .desc h3 {
+    color: #000000; }
+
+[data-theme="light"] .resume-wrap {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.1); }
+  [data-theme="light"] .resume-wrap h2 {
+    color: #000000; }
+
+[data-theme="light"] .ftco-counter .block-18 {
+  background: #ffffff;
+  border: 1px solid #eeeeee; }
+  [data-theme="light"] .ftco-counter .text span {
+    color: #555555; }
+
+[data-theme="light"] .contact-section .contact-info p a {
+  color: #1a1a1a; }
+[data-theme="light"] .contact-section .box .icon {
+  background: rgba(0, 0, 0, 0.06); }
+[data-theme="light"] .contact-section .box h3 {
+  color: #000000; }
+
+[data-theme="light"] .about-author .desc h3 {
+  color: #ffffff; }
+
+[data-theme="light"] .tag-cloud-link {
+  color: #000000; }
+
+[data-theme="light"] select.form-control,
+[data-theme="light"] .sidebar a,
+[data-theme="light"] .categories a,
+[data-theme="light"] .comment-body {
+  color: #000000; }
